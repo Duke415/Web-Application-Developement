@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+
+    display: flex;
+    padding: 30px;
+    color: white;
+    background: linear-gradient(120deg, rgb(44, 115, 203), rgb(10, 26, 76));
+}
+
+header h1,
+header p {
+    margin: 0px 100px 0px 100px;
+}
+
+nav ol {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+
+    margin-left: 40px;
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+nav input {
+
+    padding: 10px 30px;
+    margin-left: 60%;
+}
+
+
+.main {
+
+    height: 80vh;
+    background: linear-gradient(120deg, rgb(44, 115, 203), rgb(10, 26, 76));
+    position: relative;
+}
+
+.main .content {
+    color: white;
+}
+
+.main img {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    left: 50%;
+    top: 10%;
+}
+
+.content {
+
+    width: 50%;
+    padding: 50px 0px 0px 100px;
+
+}
+
+
+
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 25px;
+}
+
+.content button {
+
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+button.contact-us {
+
+    background-color: teal;
+    color: white;
+    border: none;
+
+}
+
+button.services {
+
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.content img {
+
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+.container2 {
+
+    height: 60vh;
+}
+
+.container3 {
+
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(44, 115, 203), rgb(10, 26, 76));
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+}
+
+.container3 h2 {
+
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.img-c3 {
+
+    margin-top: 5%;
+}
+
+.img-c3 img {
+
+    width: 20%;
+    height: 300px;
+    margin-left: 150px;
+}
+
+.container4 .img-c4 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+.container4 figure {
+
+    text-align: center;
+}
+
+.container4 figure img {
+
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.container4 figure h4 {
+
+    margin-bottom: 10px;
+}
+
+.container4 .stats {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+.container5 {
+
+    height: 100vh;
+}
+
+.container5 .contentA {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 300px;
+    font-size: 25px;
+
+}
+
+.container5 .contentA h2 {
+
+    margin-bottom: 20px;
+}
+
+.container5 .img-c5 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.container5 figure {
+
+    width: 30%;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.container5 figure img {
+
+    width: 300px;
+    height: 250px;
+    margin-bottom: 10px;
+
+}
+
+footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background: rgb(30, 30, 30);
+    height: 70vh;
+}
+
+footer h3 {
+
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+footer p {
+    line-height: 30px;
+    font-size: 20px;
+}

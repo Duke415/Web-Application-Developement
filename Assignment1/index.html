@@ -1,0 +1,307 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--importing fonts-->
+    <script src="https://kit.fontawesome.com/d10602c728.js" crossorigin="anonymous"></script>
+    <!--importing icon-->
+    <title>Assignment 1</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+            /*Remove default styling from whole website*/
+        }
+
+        body {
+
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+
+            display: flex;
+            padding: 30px;
+            color: white;
+            background: linear-gradient(120deg, rgb(44, 115, 203), rgb(10, 26, 76));
+
+            /*display flex is use for 1 dimension layout
+          display absolute and relative are basically used as combination, through this we can move our thing freely inside div
+        */
+        }
+
+        /*styling nav bar (table of contents)*/
+
+        nav ol {
+
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+
+            margin-left: 60px;
+        }
+
+        nav a {
+
+            color: white;
+            text-decoration: none;
+        }
+
+        header img {
+
+            width: 6%;
+            border-radius: 50%;
+            margin-left: 40px;
+        }
+
+        /*styling main page after header*/
+
+        .main {
+
+            display: flex;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .main img {
+
+            opacity: 1;
+            width: 100%;
+            height: 80vh;
+        }
+
+        /*styling content of main page*/
+
+        .main .abstract {
+
+            position: absolute;
+            color: white;
+            margin-top: 30px;
+            margin-right: 30px;
+            width: 60%;
+            top: 50px;
+            right: 100px;
+
+        }
+
+        .abstract h2 {
+
+            font-size: 30px;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+        }
+
+        .abstract p {
+
+            line-height: 25px;
+        }
+
+        .abstract .quote {
+
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        /*styling a link as button that take user to the start of page*/
+
+        .homeButton {
+
+
+            padding: 30px 0px;
+            margin-left: 92%;
+        }
+
+        .homeButton a {
+
+
+            padding: 20px 25px;
+            font-size: 30px;
+            background: black;
+            color: white;
+            border-radius: 50%;
+            box-shadow: 2px 2px 3px #999;
+        }
+
+        section {
+            padding: 30px 50px;
+        }
+
+        section h3 {
+
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            line-height: 25px;
+        }
+
+        section ul {
+
+            margin-left: 25px;
+            line-height: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="discription">
+            <h1 id="title" style="margin-bottom: 10px;">University Management</h1>
+            <!--main title of website-->
+            <p>Purposed and developed by Umer Yousaf &copy;</p><br>
+            <!--author name and &copy is html entity use for copyright sign-->
+        </div>
+
+        <nav>
+            <!--creating nav bar using ordered list with anchor tags and providing related links. Basically these are table of contents -->
+            <ol>
+                <li><a href="#purpose">Purpose</a></li>
+                <li><a href="#effect">Effect</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#tecAspects">Technical Aspects</a></li>
+                <li><a href="#relation">Relationship To Data</a></li>
+                <li><a href="https://www.academia.edu/5568260/UNIVERSITY_MANAGEMENT_SYSTEM_full_report"
+                        target="_blank">References</a>
+                </li>
+            </ol>
+        </nav>
+
+        <img src="profile.png" alt="profile picture">
+        <!--author's profile picture-->
+
+    </header>
+
+    <div class="main">
+        <!--main div is after header. Using backgroung image-->
+        <img src="main.jpg" alt="background-image" width="100%">
+        <div class="abstract">
+            <!--abstract is sub class of main class. using h2 for "abstract"-->
+            <h2>Abstract</h2>
+            <p>University management system project is a web-based solution for colleges, universities, and schools. It
+                was created for the university and its affiliated institutions to conduct, monitor, and analyze
+                complicated activities such as student admission, examinations, and much more. It is a program that
+                manages the complete student life cycle up to degree completion.
+
+                IUMS helps make important tasks like admission, results processing, registration, and fee management
+                more efficient, so they can be done faster. All users, including students, college and university
+                personnel, paper valuers, setters, and moderators, are given a role-based login/password to complete
+                their tasks. Each student has access to an online tool through the university’s examination management
+                system to complete the following Student Lifecycle tasks. This is available to all students.</p>
+
+            <p class="quote"><b>&quot; In some ways, programming is like painting. You start with a blank canvas and
+                    certain basic raw
+                    materials. You use a combination of science, art, and craft to determine what to do with them.
+                    &quot;</b> -
+
+                <em>&nbsp; Andrew Hunt &nbsp;</em>
+
+                <!--using &quot; for quotation markd and &nbsp for no break space between-->
+            </p>
+        </div>
+
+    </div>
+
+
+    <!--create multiple sections to define the table of contents-->
+
+    <section id="purpose">
+
+        <h3>Purpose</h3>
+        <p>UNIVERSITYMANAGEMENT SYSTEM[UMS] deals with themaintenance of university,college,facultie, studentinformation
+            with in theuniversity. This project ofUMS involved the automationof student information that can be
+            implemented in differentcollege managementsThe project deals with retrievalof information through anINTRANET
+            based campuswide portal. It collects relatedinformation from all thedepartments of an organizationand
+            maintains files, which areused to generate reports invarious forms to measureindividual and overall
+            performance of the students.</p>
+
+    </section>
+
+    <section id="effect">
+        <h3>Effect</h3>
+        <p>Educational institutes are the laying foundation of knowledge, with which students are being fed with the
+            proper education. It’s compulsory to have the best set up for it, to work in the way it should be, and pass
+            across relevant information to students. To function accordingly, it should have a proper management system
+            in place. This management system is known as online student management which is available in Education ERP /
+            University ERP which makes things digitally organized.
+
+            SaaS-based Education ERP has successfully reduced several tasks of educators and admin staff. Student
+            Management System is a module that manages several details about students starting from admission to
+            convocation and up to alumni management.
+
+            This module is able to keep a track record of student’s admission details, timetable management, examination
+            management, discussion board, extracurricular activities, fees management can be scheduled efficiently
+            reducing manual work.</p>
+    </section>
+
+    <section id="impact">
+        <h3>Impact</h3>
+
+        <ul>
+            <li>Developing and maintaining regular contact with tutors and learners, and interaction between tutors and
+                learners</li>
+            <li>Providing course updates and additional readings</li>
+            <li>The LMS facilitates a 24/7 information sharing portal among tutors as well as students and between
+                tutors and students;</li>
+            <li>Getting learner feedback on both course content and course delivery;</li>
+            <li>Offering clarifications and clearing queries posted by learners;</li>
+        </ul>
+
+    </section>
+
+    <section id="tecAspects">
+        <h3>Technical Aspects</h3>
+        <p>Technical Feasibility centers onthe existing computer system hardware, software, etc. and tosome extent how
+            it can supportthe proposed addition. Thisinvolves financialconsiderations to accommoda tetechnical
+            enhancements.Technical support is also areason for the success of the project. The techniques neededfor the
+            system should beavailable and it must bereasonable to use. TechnicalFeasibility is mainly concernedwith the
+            study of function, performance, and constraintsthat may affect the ability toachieve the system.
+            Byconducting an efficienttechnical feasibility we need toensure that the project works tosolve the existing
+            problem area.
+
+            Since the project is designed with HTML, CSS and JAVA Script as Front end and SQL Server as Back end, it is
+            easy to installing all the systems whereverneeded. It is more efficient,easy and user-friendly tounderstand
+            by almost everyone.Huge amount of data can behandled efficiently using SQLServer as back end. Hence this
+            project has good technical feasibility</p>
+    </section>
+
+    <section id="relation">
+        <h3>Relationship To Data</h3>
+        <p>In a University , there are several departments and each department has a head of department who belongs to
+            Faculty. Department have a name , phone extension , specific mailing address and Students that belong to the
+            department. Students can belong to only one Department at a time and Department can have more than one or no
+            Student
+
+
+            Students and faculty have names and unique identification numbers , with address , age , gender and other
+            information. Student studies different Courses offered by University . Faculty teaches these Courses . In
+            each semester one student can take more than one course and Faculty can teach more than one courses .
+            Faculty members can teach in multiple Departments. Each course can be taught by many faculty members or no
+            one
+
+            Faculty members are also working on multiple research projects. These projects are funded by government and
+            university. One project can have more than one faculty member and one faculty member can work on more than
+            one project</p>
+    </section>
+
+    <div class="homeButton">
+        <!--link that take user to start-->
+        <a href="#title"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+
+
+</body>
+
+</html>
