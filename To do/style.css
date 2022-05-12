@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image: linear-gradient(120deg, #1f2933, #323f4b);
+    font-family: sans-serif;
+    min-height: 100vh;
+    color: white;
+}
+
+
+
+header, form{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15vh;
+}
+
+form input, form button{
+
+    padding: 12px 15px;
+    border: none;
+    font-size: 20px;
+    outline: none;   
+    
+}
+
+
+form button{
+
+    background-color:  #1ddecb;
+    color: #1f2933;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form button:hover{
+
+   color:  #1ddecb;
+   background-color: #1f2933;
+}
+
+
+.box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -175px;
+}
+
+.todo-list{
+
+    min-width: 19%;
+    list-style: none;
+    
+}
+
+.box2{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+    align-items: center;
+    transition: all 0.3s ease;
+
+}
+
+.box2 li{
+
+    flex: 1;
+    font-size: 20px; 
+    padding-left: 15px;
+}
+
+.box2 button{
+
+    padding: 12px 20px;
+    border: none;
+    font-size: 20px; 
+  
+}
+
+.comp-btn{
+
+    background-color: #42e077;
+}
+
+.del-btn{
+
+    
+background-color: #ff6f47;
+
+}
+.fa-check, .fa-times{
+
+    pointer-events: none;
+}
+
+.completed{
+
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
+.deleting{
+
+    transform: translateX(250px);
+    opacity: 0;
+}
+
+select{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 10px 60px 10px 10px;
+    color: #1f2933;
+}
+
+.selection{
+
+    position: relative;
+    overflow: hidden;
+    margin-left: 30px;
+  
+
+}
+
+.selection::after{
+
+    content: "\25BC";
+    position:absolute;
+    background:#1ddecb;
+    color: #1f2933;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+
+}
+
+.selection:hover::after{
+
+    color:  #1ddecb;
+    background-color: #1f2933;
+}

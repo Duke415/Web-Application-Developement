@@ -1,0 +1,117 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.slider{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; 
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+
+}
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 15vh;
+    font-size: 25px;
+    
+}
+
+nav ul, nav i{
+
+    flex: 1;
+   
+}
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav i{
+
+    font-size: 70px;
+    margin-left: 50px;
+    color: white;
+
+}
+
+
+nav a{
+
+    text-decoration: none;
+    color:  black;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5%;
+    transition: all 0.5s ease;
+}
+
+nav a:hover{
+
+    box-shadow: rgba(0, 0, 0, 0.1) -5px 5px 5px, rgba(0, 0, 0, 0.05) -10px 10px 10px;
+
+}
+
+.box img{
+
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+    
+}
+
+
+section{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.box{
+
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.box h1{
+
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    transform: translate(-10%,60%);
+    color: white;
+    font-size: 70px;
+    z-index: 3;
+}
+
+.box::after{
+
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}

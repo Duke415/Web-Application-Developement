@@ -1,0 +1,66 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url(background.jpg);
+    background-size: cover;
+    
+}
+
+.intro{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin-left: 300px;
+}
+
+.intro h1{
+        
+    margin-bottom: 30px;
+}
+
+.typing{
+
+    position: relative;
+    margin-left: 30px;
+}
+
+.typing::after{
+
+    content: "";
+    position:absolute;
+    width: 5px;
+    height: 90%;
+    border-right: 10px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+
+    0%{
+
+        opacity: 0;
+    }
+
+    50%{
+
+        opacity: 0;
+    }
+
+    100%{
+
+        opacity: 1;
+
+    }
+}
