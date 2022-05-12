@@ -1,0 +1,728 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+
+header {
+
+
+    background-color: #1A2238;
+    color: white;
+    top: 0px;
+}
+
+nav {
+
+    min-height: 10vh;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav h1,
+nav ul {
+
+    flex: 1;
+
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+nav a:hover {
+
+    color: #F4DB7D;
+    text-shadow: 0px 0px 10px #F4DB7D;
+
+}
+
+nav i {
+
+    display: flex;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+nav i:hover {
+
+
+    color: #F4DB7D;
+    text-shadow: 0px 0px 10px #F4DB7D;
+}
+
+
+.home {
+
+    position: relative;
+    background-color: #1A2238;
+    color: white;
+    height: 90vh;
+    padding-top: 80px;
+
+
+}
+
+
+.main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-img {
+
+    margin-right: 20px;
+
+}
+
+.main-img i {
+
+    font-size: 70px;
+    color: #9DAAF2;
+    transition: 0.3s all ease;
+}
+
+.main-img i:hover {
+
+
+    color: white;
+}
+
+
+.logo-title {
+
+    margin-left: 10px;
+    text-transform: uppercase;
+
+}
+
+.logo-title h1 {
+    font-size: 35px;
+}
+
+.logo-title p {
+
+    font-size: 25px;
+}
+
+.main-title {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+
+.main-title h2 {
+
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+.main-title h2 b {
+
+    font-size: 70px;
+    font-weight: 900;
+    color: #FF6A3D;
+}
+
+.main-title h2 hr {
+
+    border: none;
+    border-top: 2px solid #FF6A3D;
+    padding: 10px;
+}
+
+.main-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.main-content h4 {
+
+    line-height: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 20px;
+}
+
+.main-content button {
+
+    margin-top: 40px;
+    padding: 15px 80px;
+    font-size: 30px;
+    border: none;
+    background-color: #11ABC1;
+    color: white;
+    transition: 0.3s all ease;
+}
+
+.main-content button:hover {
+
+    letter-spacing: 10px;
+    background-color: white;
+    color: #11ABC1;
+
+}
+
+.about {
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.about::before {
+
+    content: '';
+    width: 50%;
+    height: 120px;
+    position: absolute;
+    top: -55px;
+    left: 0;
+    background-color: #1A2238;
+    transform: skewY(8deg);
+
+}
+
+.about::after {
+
+    content: '';
+    width: 50%;
+    height: 120px;
+    position: absolute;
+    top: -55px;
+    right: 0;
+    background-color: #1A2238;
+    transform: skewY(-8deg);
+
+}
+
+.about img {
+
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.about h2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    padding-top: 12%;
+    font-size: 35px;
+    color: #1A2238;
+}
+
+.about h2 i {
+
+    color: #FF6A3D;
+    margin: 0px 20px 0px 20px;
+    font-size: 35px;
+}
+
+
+
+.about .content {
+
+    display: flex;
+    font-size: 30px;
+    line-height: 25px;
+
+}
+
+.content .para1 {
+
+    padding: 30px 20px 30px 70px;
+    text-align: right;
+}
+
+.content .para2 {
+
+
+    padding: 30px 70px 30px 20px;
+    text-align: left;
+}
+
+.about button {
+
+    position: absolute;
+    padding: 15px 30px;
+    border: none;
+    background-color: #11ABC1;
+    color: white;
+    right: 7%;
+
+}
+
+.sec3 {
+
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about .digonal1 {
+
+    position: absolute;
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    bottom: 16%;
+    opacity: 0.4;
+    transform: skewY(-8deg);
+}
+
+.about .digonal2 {
+
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-color: #F4DB7D;
+    transform: skewY(-8deg);
+    bottom: 10%;
+    left: 0;
+}
+
+.about .digonal3 {
+
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    transform: skewY(-8deg);
+    bottom: -90%;
+    left: 0;
+    overflow: visible;
+}
+
+
+.sec-3 {
+
+    height: 80vh;
+    padding-top: 50px;
+    position: relative;
+}
+
+.sec-3 .column {
+
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+
+}
+
+.sec-3 .column p {
+
+    text-align: center;
+    padding: 20px;
+}
+
+.sec-4 {
+
+    height: 120vh;
+    background-color: #1A2238;
+    background-image: -webkit-linear-gradient(-80deg, #1A2238 36%, #ffffff 36%);
+    position: relative;
+}
+
+.sec-4 .content {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sec-4 .content h2 {
+
+    background-color: #FF6A3D;
+    color: white;
+    padding: 15px 30px;
+    font-size: 40px;
+    margin-top: 76px;
+
+}
+
+.sec-4 .content p {
+
+    background-color: white;
+    color: rgb(57, 57, 57);
+    padding: 5px 40px;
+
+}
+
+.sec-4 .content h4 {
+
+    color: white;
+    margin: 10px;
+
+
+}
+
+.sec-4 .content h4 i {
+
+    color: #FF6A3D;
+}
+
+.sec-4 .content button {
+
+    padding: 15px 60px;
+    border: none;
+    background-color: #11ABC1;
+    color: white;
+    position: relative;
+
+}
+
+.sec-4 .content button span {
+    position: relative;
+    z-index: 2;
+}
+
+.sec-4 .content button::after {
+
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #FF6A3D;
+    transition: all .35s;
+
+}
+
+.sec-4 .content button:hover:after {
+    width: 100%;
+}
+
+.sec-4 .column {
+
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    margin-top: 30px;
+
+}
+
+.sec-4 .column img {
+
+    border: 1px solid black;
+    height: 200px;
+}
+
+.sec-4 .column h5 {
+
+    text-align: center;
+    padding: 10px;
+}
+
+.sec-4 .column p {
+
+    text-align: left;
+    padding: 10px 15px 0px 0px;
+}
+
+.sec-4 .column .btn {
+
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sec-4 .column .btn button {
+
+    padding: 10px 20px;
+    border: none;
+    background-color: #11ABC1;
+    color: white;
+}
+
+
+
+.sec-4 .column .btn i {
+
+    margin-right: 15px;
+    color: #11ABC1;
+    font-size: 30px;
+}
+
+.sec-4 .line {
+
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: #F4DB7D;
+    transform: skewY(180deg);
+    bottom: 0;
+    left: 0;
+}
+
+.sec-5 {
+
+    position: relative;
+    height: 80vh;
+    background-color: #1A2238;
+    color: white;
+}
+
+.sec-5 h2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    padding-top: 5%;
+    font-size: 35px;
+
+}
+
+
+
+.sec-5 h2 i {
+
+    color: #FF6A3D;
+    margin: 0px 20px 0px 20px;
+}
+
+.sec-5 .content {
+
+    display: flex;
+
+}
+
+.sec-5 .content .para1 {
+
+    padding: 20px 30px 50px 100px;
+}
+
+.sec-5 .content .para2 {
+
+    padding: 20px 100px 50px 30px;
+}
+
+.sec-5 button {
+
+    position: absolute;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    background-color: #11ABC1;
+    font-size: 20px;
+    right: 44%;
+    transition: 0.3s all ease-in-out;
+}
+
+
+.sec-5 button:hover {
+
+    background-color: white;
+    color: #11ABC1;
+}
+
+.sec-5 .line1 {
+
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    background-color: #1A2238;
+    transform: skewY(5deg);
+    bottom: -12%;
+    left: 0;
+}
+
+.sec-6 {
+
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec-6 img {
+
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+.sec-6 .inExHale {
+
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -70%);
+    line-height: 40px;
+    letter-spacing: 3px;
+
+}
+
+.sec-6 .inExHale h4 {
+    font-size: 30px;
+    color: #1A2238;
+}
+
+.sec-6 .inExHale i {
+
+    margin-right: 15px;
+    font-size: 25px;
+    color: #1A2238;
+
+}
+
+.sec-6 .inExHale h3 {
+
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 40px;
+    color: #1A2238;
+}
+
+.sec-6 .inExHale h3 hr {
+
+    border: none;
+    border-top: 2px solid #1A2238;
+    padding: 10px;
+}
+
+.sec-6 .digonal4 {
+
+    position: absolute;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    bottom: 5%;
+    opacity: 0.4;
+    transform: skewY(-5deg);
+
+}
+
+.sec-6 .digonal5 {
+
+    position: absolute;
+    background-color: #1A2238;
+    height: 150px;
+    width: 100%;
+    bottom: -10%;
+    transform: skewY(-5deg);
+
+}
+
+footer {
+
+    height: 50vh;
+    background-color: #1A2238;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 50px 0px 200px;
+
+}
+
+footer .footer-contact,
+footer .footer-about,
+footer .followUs {
+
+    width: 33%;
+
+}
+
+
+footer h2 {
+
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+}
+
+footer h2 i {
+
+    margin-right: 20px;
+    font-size: 25px;
+
+}
+
+footer .val {
+
+    border-left: 3px solid #FF6A3D;
+    height: 60px;
+    margin: 40px 100px;
+}
+
+.followUs .icons i {
+
+    margin: 15px 25px 0px 0px;
+    font-size: 30px;
+    color: #11ABC1;
+    transition: 0.2s all ease-in-out;
+
+}
+
+.followUs .icons i:hover {
+
+    color: white;
+
+}
+
+button {
+    cursor: pointer;
+}
