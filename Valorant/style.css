@@ -1,0 +1,597 @@
+html {
+
+    font-size: 62.5%;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+
+    height: 100%;
+
+}
+
+a {
+    cursor: pointer;
+}
+
+.nav-bar {
+
+    height: 80.5px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    margin: auto;
+    border: none;
+
+}
+
+.dropbtn {
+
+    background: rgb(3, 3, 3);
+    padding: 1rem 2rem;
+    color: rgb(233, 233, 233);
+    border: none;
+}
+
+.dropdown {
+
+    position: relative;
+    display: inline-block;
+    margin-right: 2rem;
+    margin-top: 2.2rem;
+}
+
+.options {
+
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 20rem;
+    z-index: 1;
+
+}
+
+.options h2 {
+
+    color: #ff4655;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.options a {
+
+    color: white;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.options a:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+.dropdown:hover .options {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: rgb(240, 240, 240)
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6 {
+
+    margin-left: 1.7rem;
+
+}
+
+
+#ff {
+
+    font-size: 1rem;
+    margin-left: 0.5rem;
+
+}
+
+.playnow {
+
+    position: relative;
+    display: inline-block;
+    margin-left: 32rem;
+}
+
+.playnow button {
+
+    padding: 1.5rem 3.6rem;
+    border-radius: 0.2rem;
+    border: none;
+    background-color: #ff4655;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.drop-img {
+
+    filter: invert(1);
+    height: 15px;
+    width: 15px;
+}
+
+.img-options {
+
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 10rem;
+    z-index: 1;
+
+}
+
+.dropdown-img {
+
+    position: relative;
+    display: inline-block;
+    margin-right: 4rem;
+    margin-top: 2.5rem;
+}
+
+.img-options a {
+
+    color: white;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.img-options a:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+.dropdown-img:hover .img-options {
+    margin-top: 3.5rem;
+    margin-left: -5.7rem;
+    display: block;
+}
+
+.dropdown:hover .drop-img {
+    color: rgb(240, 240, 240)
+}
+
+
+.main {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+
+.main h1 {
+
+    font-size: 13rem;
+    color: white;
+    z-index: 1;
+    margin-top: 18rem;
+    margin-left: -52rem;
+
+}
+
+.main h4 {
+
+    font-size: 2rem;
+    color: white;
+    z-index: 1;
+    margin: 15rem 0rem 0rem 60rem;
+}
+
+
+.main button {
+
+    position: absolute;
+    margin: 35rem 0rem 0rem 68rem;
+    padding: 2rem 8.3rem;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #ff4655;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.main .play:hover {
+
+    background-color: rgb(8, 8, 8);
+}
+
+.vid {
+
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+}
+
+.background {
+
+    margin-top: 8rem;
+
+}
+
+.content h1 {
+
+    margin: 20rem 0rem 1rem 15rem;
+    font-size: 6.5rem;
+    color: #ff4655;
+
+}
+
+.content img {
+
+    margin-right: 5rem;
+    height: 25%;
+    width: 25%;
+}
+
+.content .img1 {
+
+    margin-left: 15rem;
+}
+
+.content .link-box {
+
+    display: inline-block;
+    margin-top: 5rem;
+
+}
+
+.content a {
+
+
+    text-decoration: none;
+    font-size: 1.76rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+.content .link1 {
+
+    margin-left: 15rem;
+    margin-right: 5rem;
+}
+
+.content .link2 {
+
+    margin-right: 12rem;
+}
+
+.content .link2-1 {
+
+    margin-left: 58.15rem;
+    margin-right: 33.9rem;
+
+}
+
+.content h2 {
+
+    color: #ff4655;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    letter-spacing: 44rem;
+
+}
+
+.second-portion h1 {
+
+    margin: 5rem 0rem 8rem 20rem;
+    font-size: 8rem;
+    font-weight: 700;
+
+}
+
+.second-portion .box {
+
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 6rem 1rem 26rem;
+
+}
+
+.second-portion .vid-box video {
+
+    height: 100%;
+    width: 70rem;
+    margin-left: -9rem;
+}
+
+.second-portion .con-box h2 {
+
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.second-portion .para-box {
+
+    background-color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    width: 50%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: gray;
+}
+
+.second-portion .para-box a {
+
+    display: block;
+    text-decoration: none;
+    margin-top: 3rem;
+    color: #ff4655;
+}
+
+.second-portion .para-box h2 {
+
+    color: black;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 5rem;
+}
+
+
+
+
+.clear {
+
+    height: 200px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+
+.third-portion {
+
+    display: flex;
+    background-color: #ff4655;
+}
+
+.third-portion .con-box {
+
+    background-color: #ff4655;
+    padding-right: 40rem;
+    padding-top: 14rem;
+
+}
+
+.third-portion .con-box h1 {
+
+    margin-top: 5rem;
+    font-size: 7rem;
+    font-weight: 900;
+    color: whitesmoke;
+    word-spacing: 50rem;
+    line-height: 7rem;
+    font-stretch: wider;
+}
+
+.third-portion .con-box h3 {
+
+    color: rgb(185, 185, 185);
+    margin-top: 5rem;
+
+}
+
+.third-portion .con-box h2 {
+
+    margin-top: 7rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: whitesmoke;
+    word-spacing: 0.1rem;
+
+}
+
+.third-portion .con-box p {
+
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    line-height: 2rem;
+
+}
+
+
+.third-portion .con-box button {
+
+    margin-top: 5rem;
+    padding: 2rem 6rem;
+    border: none;
+    text-align: center;
+    color: rgb(2, 2, 2);
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.third-portion button:hover {
+
+    background-color: black;
+    color: white;
+}
+
+.third-portion .pic-box {
+
+    padding-left: 10rem;
+
+}
+
+
+.fourth-portion {
+
+    position: relative;
+    background-color: rgb(242, 239, 232)
+}
+
+.fourth-portion img {
+
+    width: 80%;
+    height: 80%;
+    margin-left: 30rem;
+    opacity: 0.25;
+
+}
+
+.fourth-portion .con-box {
+
+    position: absolute;
+    margin: -60% 0rem 0rem 30rem;
+
+}
+
+.fourth-portion .con-box h3 {
+
+    margin-top: 30rem;
+    color: rgb(185, 185, 185);
+}
+
+.fourth-portion .con-box h1 {
+
+    font-size: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+.fourth-portion .con-box h2 {
+
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    word-spacing: 0.1rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.fourth-portion .con-box p {
+
+    color: rgb(34, 34, 34);
+    padding-right: 85rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.fourth-portion .con-box button {
+
+    margin-top: 7rem;
+    padding: 2rem 6rem;
+    border: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #ff4655;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.fourth-portion button:hover {
+
+    background: rgb(18, 18, 18);
+
+}
+
+.last-portion {
+
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+
+
+}
+
+.last-portion .con-box h1 {
+
+    margin-top: 5rem;
+    font-size: 1.3rem;
+    color: #7e7e7e;
+}
+
+.last-portion .con-box .logo {
+
+    filter: invert(1);
+
+}
+
+.last-portion .con-box .socials {
+
+    filter: invert(1);
+}
+
+.last-portion .con-box .socials .img1 {
+
+
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+
+}
+
+.last-portion .con-box .socials .img2 {
+
+
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+
+}
+
+.last-portion .con-box p {
+
+    margin-top: 7rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    color: #7e7e7e;
+}
+
+.last-portion .para-box {
+
+    padding-right: 46rem;
+    padding-left: 46rem;
+
+}
+
+.last-portion .con-box .tags a {
+
+    display: inline-block;
+    margin: 5rem 0.5rem 5rem 0rem;
+    color: #7e7e7e;
+    font-size: 1.2rem;
+
+}
