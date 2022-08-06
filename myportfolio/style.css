@@ -55,6 +55,120 @@ nav a {
 
 }
 
+nav .menu-bar {
+
+    display: none;
+    cursor: pointer;
+}
+
+nav .menu-bar div {
+
+    width: 33px;
+    height: 3px;
+    background-color: #F50057;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+@media screen and (max-width:1024px) {
+
+    nav .nav-links {
+
+        width: 40%;
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    body {
+
+        overflow-x: hidden;
+    }
+
+
+    .nav-links {
+
+        height: 60vh;
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        background-color: white;
+        transform: translateX(100%);
+        transition: .5s all ease-in;
+        z-index: 10;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+    }
+
+    nav .nav-links li {
+
+        opacity: 0;
+
+    }
+
+    nav .menu-bar {
+
+        display: block;
+    }
+
+    nav ul li:hover a {
+        border-bottom: 2px solid #F50057;
+
+    }
+
+    .bubble {
+        display: none;
+    }
+
+}
+
+.nav-active {
+
+    /*Class for JS*/
+
+    transform: translateX(0%);
+}
+
+@keyframes navLinkAnimation {
+
+    from {
+
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.menu-cross .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-cross .line2 {
+    opacity: 0;
+}
+
+.menu-cross .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+/***************/
+
 section {
 
     min-height: 100vh;
@@ -386,6 +500,74 @@ section .underlines {
 }
 
 
+@media screen and (max-width:768px) {
+
+    .about {
+
+        padding: 10px;
+    }
+
+    .about .content {
+
+        flex-direction: column;
+        height: 165vh;
+
+    }
+
+    .about .content .myself,
+    .about .content .skills {
+        width: 100%;
+        padding: 5px;
+
+    }
+
+    .about .content .myself .hero {
+
+
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 250px;
+        width: 200px;
+    }
+
+
+    .about .content .myself .details {
+
+        text-align: center;
+        align-items: center;
+        hyphens: auto;
+        top: 73%;
+
+    }
+
+    .about .content .myself .details h3 {
+
+        line-height: 35px;
+
+    }
+
+    .about .content .myself .details p {
+
+        line-height: 25px;
+    }
+
+    .about .content .skills li {
+
+        height: 40px;
+    }
+
+
+    .about .content .skills li h3 {
+
+        justify-content: left;
+        width: 30%;
+        padding-left: 10px;
+
+    }
+
+}
+
 
 /*Nav-bar end*/
 
@@ -490,13 +672,12 @@ section .underlines {
     border: 1px solid #F50057;
     padding: 10px 30px;
     box-shadow: 0 0 10px #F50057;
-
+    background-color: #F50057;
 }
 
 .container .card .card__content a:hover,
 .container .card .card__content a:focus {
 
-    background-color: #F50057;
     box-shadow: 0 0 30px #F50057;
 }
 
@@ -523,7 +704,7 @@ section .underlines {
     text-align: center;
     top: calc(100% - 2em);
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     font-size: 2em;
     transform: rotate(0deg) skew(-5deg);
 }
@@ -540,6 +721,47 @@ section .underlines {
     margin-right: 1em;
 }
 
+@media screen and (max-width:768px) {
+    /*****Project section********/
+
+    .project .heading {
+
+        margin-bottom: 70px;
+    }
+
+    .container .card .card__content p {
+
+        display: none;
+    }
+
+    .container .card {
+
+        height: 80vmin;
+
+    }
+
+    .container .card:hover .card__content {
+
+        top: calc(97% - 2em);
+        background: rgba(0, 0, 0, 0);
+        font-size: 2em;
+        transform: rotate(0deg) skew(5deg);
+    }
+
+    .container .card:hover .card__head {
+
+        top: calc(80%);
+        bottom: 8%;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        transform: rotate(-90deg) skew(0deg);
+    }
+
+    .container .card:hover {
+        flex-grow: 10;
+    }
+
+}
 
 /*********Slider************/
 
@@ -661,6 +883,8 @@ section .underlines {
     background-color: white;
 }
 
+@media screen and (max-width:768px) {}
+
 /*******footer********/
 
 #contact-link {
@@ -767,3 +991,9 @@ footer .footer-contact .submit-btn:hover {
     background-color: #F50057;
     border: #F50057;
 }
+
+/******Responsive********/
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {}
