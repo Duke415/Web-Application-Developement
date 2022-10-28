@@ -1,0 +1,1576 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+
+    --yellow: #ffb933;
+    --dark-grey: #29435d;
+    --text-color: #646e86;
+    --green: #4fcfad;
+    --light-grey: #d1d5d8;
+    --blue: #60aafe;
+    --purple: #883df1;
+}
+
+p {
+    color: var(--text-color);
+}
+
+.bubble {
+
+    position: absolute;
+    border-radius: 50%;
+    z-index: -100;
+    opacity: 0.8;
+}
+
+.xl-bubble {
+
+    height: 700px;
+    width: 700px;
+
+}
+
+.l-bubble {
+    height: 200px;
+    width: 200px;
+
+}
+
+.m-bubble {
+    height: 50px;
+    width: 50px;
+
+}
+
+.sm-bubble {
+    height: 20px;
+    width: 20px;
+
+}
+
+.intro {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 70vh 25vh;
+    column-gap: 10px;
+    row-gap: 50px;
+    position: relative;
+}
+
+.intro .bubble1 {
+
+    right: -10%;
+    top: -10%;
+    background-color: var(--yellow);
+}
+
+.intro .bubble2 {
+
+    right: 35%;
+    top: 0;
+    background-color: var(--purple);
+}
+
+.intro .bubble3 {
+
+    top: 10%;
+    left: 5%;
+    background-color: var(--blue);
+}
+
+
+.intro .title {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+
+}
+
+.intro .title h1 {
+
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+
+.intro .title-img {
+
+    align-self: center;
+    justify-self: end;
+    width: 90%;
+    height: 400px;
+    border: 3px solid var(--dark-grey);
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.intro .title-img img {
+
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.intro .platforms {
+
+    width: 70%;
+    margin-left: auto;
+}
+
+.intro .platforms i {
+
+    font-size: 40px;
+    padding: 0px 120px 50px 0px;
+    color: var(--text-color);
+}
+
+.section2 {
+
+    margin-top: 100px;
+
+}
+
+.section2 .version1 {
+
+    display: flex;
+
+}
+
+.section2 .version1 .v1-title {
+
+    width: 20%;
+    margin-left: auto;
+
+
+}
+
+.section2 .version1 .v1-title h2 {
+
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.section2 .version1 .v1-title h5 {
+
+    color: var(--yellow);
+}
+
+.section2 .version1 .v1-content {
+
+    width: 40%;
+    margin: auto;
+
+}
+
+.section2 .version1 .v1-content p {
+
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.about-client {
+
+    height: 500px;
+    display: flex;
+}
+
+.about-client .profile {
+
+    width: 50%;
+
+}
+
+.about-client .profile img {
+    height: 100%;
+    width: auto;
+}
+
+.about-client .version2 {
+
+    width: 40%;
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.about-client .version2 .v2-title h2 {
+
+    margin: 10px 0px 20px 0px;
+    font-size: 30px;
+
+}
+
+.about-client .version2 .v2-title h5 {
+    color: var(--green);
+}
+
+.about-client .version2 .v2-content a {
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.about-client .version2 .v2-content p {
+
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.gantt-chart {
+
+    width: 90%;
+    height: 80vh;
+    margin: 10vh auto;
+}
+
+.gantt-chart img {
+
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.product .version3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+.product .version3 .v3-title h2 {
+
+    margin: 10px 0px;
+    font-size: 30px;
+}
+
+.product .version3 .v3-title h5 {
+
+    color: var(--green);
+}
+
+.product .version3 .v3-content p {
+
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+.product .strategys {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product .strategys .strat {
+
+    width: 25%;
+
+}
+
+.product .strategys .strat i {
+
+    padding: 30px;
+    font-size: 50px;
+
+}
+
+.product .strategys .strat .fa-ranking-star {
+    color: var(--purple);
+    background: rgba(136, 61, 241, 0.2);
+}
+
+.product .strategys .strat .fa-bullseye {
+    color: var(--green);
+    background: rgba(79, 207, 173, 0.2);
+}
+
+.product .strategys .strat .fa-pen-ruler {
+    color: var(--yellow);
+    background: rgba(255, 185, 51, 0.2);
+}
+
+.product .strategys .strat h3 {
+
+    font-size: 20px;
+    margin: 20px 0px 10px 0px;
+
+}
+
+.img-gallery {
+
+    height: 100vh;
+    position: relative;
+    margin-top: 100px;
+    padding: 50px 0px;
+    overflow-x: hidden;
+    background-color: var(--light-grey);
+}
+
+.img-gallery .poster {
+
+    position: absolute;
+    width: 600px;
+    height: 320px;
+    border: 3px solid var(--dark-grey);
+    border-radius: 10px;
+
+}
+
+.img-gallery .poster img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-gallery .poster1 {
+    top: 5%;
+    left: -2%;
+}
+
+.img-gallery .poster2 {
+    right: 20%;
+    top: 5%;
+}
+
+.img-gallery .poster3 {
+    bottom: 5%;
+    left: 20%;
+}
+
+.img-gallery .poster4 {
+
+    right: -5%;
+    bottom: 5%;
+}
+
+
+.user-exp {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+
+.user-exp .version4 {
+
+    width: 30%;
+
+}
+
+.user-exp .version4 .v4-title h2 {
+
+    margin: 10px 0px;
+    font-size: 30px;
+}
+
+.user-exp .version4 .v4-title h5 {
+    color: var(--green);
+}
+
+.user-exp .version4 .v4-content p {
+
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.user-exp .services {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 100px;
+    row-gap: 80px;
+    width: 50%;
+
+}
+
+.user-exp .services .serv {
+
+    text-align: left;
+}
+
+
+.user-exp .services .serv i {
+    font-size: 40px;
+}
+
+.user-exp .services .serv .fa-clock,
+.user-exp .services .serv .fa-gears {
+
+    color: var(--yellow);
+}
+
+.user-exp .services .serv .fa-credit-card,
+.user-exp .services .serv .fa-comment-dots {
+
+    color: var(--purple);
+}
+
+.user-exp .services .serv .fa-people-roof {
+    color: var(--blue);
+}
+
+.user-exp .services .serv .fa-chart-pie {
+    color: var(--green);
+}
+
+.user-exp .services .serv h3 {
+
+    margin: 20px 0px 10px 0px;
+}
+
+.cards {
+
+    margin-top: 30vh;
+    position: relative;
+}
+
+
+.cards .user-card {
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 25%;
+    height: 650px;
+    margin: auto;
+    position: relative;
+
+}
+
+
+.cards .user-card .user-img img {
+
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -7%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    border-radius: 50%;
+
+}
+
+.cards .user-card .user-details {
+
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.cards .user-card .user-details h3 {
+
+    margin: 10px 0px;
+}
+
+
+.cards .user-card .user-details .inner-img {
+
+    height: 200px;
+    width: 150%;
+    margin: 40px 0px;
+
+}
+
+.cards .user-card .user-details .inner-img img {
+
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cards .user-card .user-details button {
+
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+.cards .user-card .user-details .stats {
+
+    color: white;
+    background: var(--green);
+}
+
+.cards .user-card .user-details .status {
+    color: var(--green);
+    background: rgba(79, 207, 173, 0.2);
+}
+
+.cards .user-card i {
+
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    font-size: 20px;
+    color: var(--text-color)
+}
+
+.cards .msg-card {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.cards .msg-card {
+    padding: 20px;
+}
+
+.cards .msg-card i {
+
+    margin: 15px;
+}
+
+.cards .l-msg-card {
+
+    height: 200px;
+    width: 200px;
+
+}
+
+.cards .l-msg-card i {
+    font-size: 60px;
+}
+
+.cards .sm-msg-card {
+
+    height: 150px;
+    width: 150px;
+
+}
+
+.cards .sm-msg-card i {
+    font-size: 30px;
+}
+
+.cards .msg-card1 {
+
+    top: 0;
+    left: -2%;
+    color: var(--purple);
+    background: rgba(136, 61, 241, 0.2);
+
+}
+
+.cards .msg-card2 {
+
+    top: 25%;
+    left: 70%;
+    color: var(--green);
+    background: rgba(79, 207, 173, 0.2);
+
+}
+
+.cards .msg-card3 {
+
+    top: 25%;
+    left: 18%;
+    color: var(--blue);
+    background: rgba(96, 170, 254, 0.2);
+}
+
+.cards .msg-card4 {
+
+    top: 5%;
+    right: -1%;
+    background: rgba(96, 170, 254, 0.3);
+    color: var(--blue);
+}
+
+.cards .msg-card5 {
+
+    top: 55%;
+    right: 3%;
+    color: var(--yellow);
+    background: rgba(255, 185, 51, 0.2);
+}
+
+.branding {
+
+    margin-top: 20vh;
+}
+
+.branding .version5 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.branding .version5 .v5-title h2 {
+    margin: 10px 0px 20px 0px;
+    font-size: 30px;
+}
+
+.branding .version5 .v5-title h5 {
+    color: var(--yellow);
+}
+
+.branding .version5 .v5-content p {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.branding .colors {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 300px;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 70%;
+    margin: auto;
+
+}
+
+.branding .colors .color {
+
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.branding .colors .color .color-name {
+    font-size: 30px;
+    min-height: 85%;
+}
+
+.branding .colors .yellow {
+    background-color: var(--yellow);
+}
+
+.branding .colors .purple {
+    background-color: var(--purple);
+}
+
+.branding .colors .green {
+    background-color: var(--green);
+}
+
+.branding .colors .blue {
+    background-color: var(--blue);
+}
+
+.branding .colors .dark-grey {
+    background-color: var(--dark-grey);
+}
+
+.branding .colors .text-color {
+    background-color: var(--text-color);
+}
+
+.branding .colors .light-grey {
+    background-color: var(--light-grey);
+}
+
+.branding .colors .yellow2 {
+    background-color: var(--yellow);
+}
+
+.outro {
+
+    margin-top: 25vh;
+}
+
+.outro .sect {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0;
+    position: relative;
+}
+
+.outro :nth-child(even) {
+
+    flex-direction: row-reverse;
+}
+
+.outro :nth-child(even) .bubble1 {
+    top: -30%;
+    left: -10%;
+}
+
+
+.outro .sect .bubble1 {
+
+    top: -30%;
+    right: -10%;
+
+}
+
+.outro .sect .bubble2 {
+
+    top: -10%;
+    left: 51%;
+    background-color: var(--light-grey);
+}
+
+
+.outro .sect .bubble3 {
+
+    top: 80%;
+    left: 40%;
+    background-color: var(--purple);
+}
+
+
+
+.outro .sect .bubble4 {
+
+    top: 60%;
+    left: 50%;
+    background-color: var(--blue);
+}
+
+
+
+.outro .sect .version {
+
+    width: 35%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding-left: 30px;
+
+}
+
+.outro .sect .version .title h2 {
+
+    margin: 10px 0px 20px 0px;
+    font-size: 30px;
+
+}
+
+.outro .sect .version .title h5 {
+    color: var(--green);
+    text-transform: capitalize;
+}
+
+
+.outro .sect .version .content p {
+
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.outro .sect .sect-img {
+
+    width: 40%;
+    height: 400px;
+    border: 3px solid var(--dark-grey);
+}
+
+.outro .sect .sect-img img {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.outro .sect .rimg {
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+.outro .sect .rimg img {
+
+    border-radius: 20px 0px 0px 20px;
+}
+
+.outro .sect .limg {
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+.outro .sect .rimg img {
+
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+footer {
+
+    height: 25vh;
+    margin-top: 25vh;
+}
+
+footer h2 {
+
+    text-align: center;
+    font-size: 30px;
+    color: var(--dark-grey);
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .xl-bubble {
+
+        height: 300px;
+        width: 300px;
+
+    }
+
+    .l-bubble {
+        height: 150px;
+        width: 150px;
+
+    }
+
+    .m-bubble {
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .sm-bubble {
+        height: 20px;
+        width: 20px;
+
+    }
+
+    .intro {
+        grid-template-rows: 200px 400px;
+    }
+
+
+    .intro .title {
+
+        width: 60%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .intro .title h1 {
+
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+
+    .intro .platforms {
+
+        width: 90%;
+        text-align: center;
+
+    }
+
+    .section2 .version1 {
+
+        margin-bottom: 50px;
+
+    }
+
+    .section2 .version1 .v1-title {
+
+        width: 90%;
+        margin-left: auto;
+        padding: 0px 50px;
+    }
+
+    .section2 .version1 .v1-content {
+
+        width: 100%;
+        padding-right: 30px;
+
+    }
+
+    .img-gallery {
+
+        height: 70vh;
+        margin-top: 50px;
+
+    }
+
+    .img-gallery .poster {
+
+        position: unset;
+        width: 500px;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+
+    .gantt-chart {
+
+        width: 100%;
+        height: 70vh;
+        margin: 15vh auto;
+    }
+
+
+    .product .version3 {
+
+        width: 80%;
+
+    }
+
+
+
+    .about-client .profile {
+
+        width: 60%;
+        height: 400px;
+
+    }
+
+    .about-client .version2 {
+
+        width: 90%;
+        margin: 0px;
+        padding-right: 30px;
+    }
+
+    .user-exp {
+
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+
+    .user-exp .version4 {
+
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .user-exp .services {
+
+
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+
+    }
+
+    .user-exp .services .serv i {
+        font-size: 30px;
+    }
+
+
+    .cards .user-card {
+
+        width: 40%;
+        height: 650px;
+
+    }
+
+    .cards .l-msg-card {
+
+        height: 170px;
+        width: 170px;
+
+    }
+
+    .cards .l-msg-card i {
+        font-size: 40px;
+    }
+
+    .cards .l-msg-card h3 {
+        font-size: 16px;
+    }
+
+    .cards .sm-msg-card {
+
+        height: 120px;
+        width: 120px;
+    }
+
+    .cards .sm-msg-card i {
+        font-size: 20px;
+    }
+
+    .cards .sm-msg-card h3 {
+        font-size: 16px;
+    }
+
+    .branding .version5 {
+
+        width: 60%;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .xl-bubble {
+
+        height: 250px;
+        width: 250px;
+
+    }
+
+    .l-bubble {
+        height: 100px;
+        width: 100px;
+
+    }
+
+    .m-bubble {
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .sm-bubble {
+        height: 10px;
+        width: 10px;
+
+    }
+
+    .intro {
+        grid-template-rows: 200px 400px;
+    }
+
+
+    .intro .title {
+
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .intro .title h1 {
+
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+
+    .intro .platforms {
+
+        width: 90%;
+        text-align: center;
+
+    }
+
+    .section2 .version1 {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .section2 .version1 .v1-title {
+
+        width: 90%;
+        text-align: center;
+        margin: 0px auto 30px auto;
+
+    }
+
+    .section2 .version1 .v1-title h2 {
+
+        margin-top: 10px;
+
+    }
+
+    .section2 .version1 .v1-content {
+
+        width: 80%;
+        margin: auto;
+
+    }
+
+
+    .about-client {
+
+        margin-top: 10vh;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-client .profile {
+
+        width: 70%;
+        height: 400px;
+
+    }
+
+    .about-client .version2 {
+
+        margin-top: 60px;
+        width: 90%;
+
+    }
+
+    .about-client .version2 .v2-content a {
+        font-size: 16px;
+
+    }
+
+    .gantt-chart {
+
+        width: 100%;
+        height: 50vh;
+        margin: 10vh auto;
+    }
+
+
+    .product .version3 {
+
+        width: 80%;
+
+    }
+
+    .product .strategys {
+
+        flex-direction: column;
+
+    }
+
+    .product .strategys .strat {
+
+        width: 60%;
+        margin-bottom: 70px;
+    }
+
+    .product .strategys .strat i {
+
+        font-size: 40px;
+
+    }
+
+    .img-gallery {
+
+        height: 55vh;
+        margin-top: 50px;
+
+    }
+
+    .img-gallery .poster {
+
+        position: unset;
+        width: 400px;
+        height: 250px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+
+
+    .user-exp {
+
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+
+    .user-exp .version4 {
+
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .user-exp .services {
+
+
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+
+    }
+
+    .user-exp .services .serv i {
+        font-size: 30px;
+    }
+
+
+    .cards {
+
+        margin-top: 30vh;
+        position: relative;
+        height: 250vh;
+    }
+
+    .cards .user-card {
+
+        width: 60%;
+        height: 650px;
+
+    }
+
+
+    .cards .msg-card1 {
+
+        top: 60%;
+        left: -2%;
+
+    }
+
+    .cards .msg-card2 {
+
+        top: 70%;
+        left: 50%;
+
+    }
+
+    .cards .msg-card3 {
+
+        top: 80%;
+        left: 18%;
+
+    }
+
+    .cards .msg-card4 {
+
+        top: 55%;
+        right: -1%;
+
+    }
+
+    .cards .msg-card5 {
+
+        top: 90%;
+        right: 3%;
+
+    }
+
+    .branding .version5 {
+
+        width: 80%;
+
+    }
+
+
+    .outro .sect {
+
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .outro :nth-child(even) {
+
+        flex-direction: column;
+    }
+
+
+
+    .outro .sect .version {
+
+        width: 90%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        padding-left: 30px;
+
+    }
+
+    .outro .sect .version .title h2 {
+
+        font-size: 20px;
+
+    }
+
+    .outro .sect .version .title h5 {
+
+        font-size: 16px;
+    }
+
+    .outro .sect .sect-img {
+
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        border: 3px solid var(--dark-grey);
+    }
+
+    .outro .sect .rimg {
+
+        margin-right: 0px;
+        border-right: none;
+        border-radius: 20px 0px 0px 20px;
+
+    }
+
+    .outro .sect .limg {
+
+        margin-left: 0px;
+        border-left: none;
+        border-radius: 0px 20px 20px 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    main,
+    footer {
+
+        overflow-x: hidden;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .xl-bubble {
+
+        height: 150px;
+        width: 150px;
+
+    }
+
+    .l-bubble {
+        height: 70px;
+        width: 70px;
+
+    }
+
+    .m-bubble {
+        height: 15px;
+        width: 15px;
+
+    }
+
+    .sm-bubble {
+        height: 7px;
+        width: 7px;
+
+    }
+
+    .intro {
+        grid-template-rows: 250px 400px;
+    }
+
+
+    .intro .title {
+
+        width: 80%;
+        padding: 0px 50px 0px 20px;
+        margin: auto 0px;
+        text-align: left;
+    }
+
+    .intro .title h1 {
+
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    .intro .platforms {
+
+        width: 90%;
+        margin: auto 0px;
+        padding-left: 20px;
+        text-align: center;
+
+    }
+
+    .section2 .version1 .v1-content {
+
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .about-client {
+
+        margin-top: 10vh;
+        height: 170vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-client .profile {
+
+        width: 90%;
+        margin: auto;
+        height: 400px;
+
+    }
+
+    .about-client .version2 {
+
+        width: 90%;
+        margin: 60px auto 0px auto;
+    }
+
+    .about-client .version2 .v2-content a {
+        font-size: 14px;
+    }
+
+
+    .product .strategys .strat {
+
+        width: 80%;
+    }
+
+    .product .strategys .strat i {
+
+        font-size: 30px;
+
+    }
+
+
+    .img-gallery {
+
+        height: 70vh;
+        margin-top: 30px;
+
+    }
+
+    .img-gallery .poster {
+
+        position: unset;
+        width: 300px;
+        height: 250px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .user-exp {
+
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+
+    .user-exp .version4 {
+
+        width: 80%;
+        margin: auto;
+
+    }
+
+
+    .cards {
+
+        margin-top: 30vh;
+        position: relative;
+        height: 300vh;
+    }
+
+    .cards .user-card {
+
+        width: 70%;
+        height: 700px;
+
+    }
+
+
+
+    .cards .msg-card3 {
+
+        left: 10%;
+
+    }
+
+
+    .branding .version5 {
+
+        width: 90%;
+
+    }
+
+
+    .outro .sect {
+
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .outro :nth-child(even) {
+
+        flex-direction: column;
+    }
+
+
+
+    .outro .sect .version {
+
+        width: 90%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        padding-left: 30px;
+
+    }
+
+    .outro .sect .version .title h2 {
+
+        font-size: 20px;
+
+    }
+
+    .outro .sect .version .title h5 {
+
+        font-size: 16px;
+    }
+
+    .outro .sect .sect-img {
+
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        border: 3px solid var(--dark-grey);
+    }
+
+    .outro .sect .rimg {
+
+        margin-right: 0px;
+        border-right: none;
+        border-radius: 20px 0px 0px 20px;
+
+    }
+
+    .outro .sect .limg {
+
+        margin-left: 0px;
+        border-left: none;
+        border-radius: 0px 20px 20px 0px;
+
+    }
+
+    footer h2 {
+        font-size: 25px;
+    }
+}
