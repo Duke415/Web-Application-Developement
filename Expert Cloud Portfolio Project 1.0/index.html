@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("WXg21ZtXs_30vPrzA");
+        })();
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+
+            <div id="logo">
+                <h2><div>Has</div>san Siddique</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a data-page="home" href="#home-link">Home</a></li>
+                <li><a data-page="about" href="#about-link">About</a></li>
+                <li><a data-page="services" href="#services-link">Services</a></li>
+                <li><a data-page="projects" href="#projects-link">Projects</a></li>
+                <li><a data-page="testimonials" href="#testimonials-link">Testimonials</a></li>
+                <li class="contact-me__button"><a href="#contact-link">Contact Me</a></li>
+            </ul>
+
+            
+            <div class="menu-bar">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+
+<!----------------------Home Section----------------------------->
+
+        <section id="home-link" data-index="0" class="home">
+
+            <div class="background-sprinkles" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000">
+                <img src="images/background.png" alt="">
+            </div>
+            <div class="home-content" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+
+                <div class="title">
+                    <h2>I'm Hassan Siddique</h2>
+                    <h1><span>CTO</span> Of ExpertsCloud Pvt. Limited</h1>
+                </div>
+                <div class="description">
+                    <p>The CTO/Head of Engineering will be responsible for overseeing the technical strategy, architecture, and development of our financial software solutions. This role requires a deep understanding of finance-related software development.</p>
+                </div>
+
+                <a href="#contact-link" style="text-decoration: none; color:white;">
+                    <button class="contact-me__button">   
+                        Contact Me
+                        <i class="fa-solid fa-arrow-right"></i> 
+                    </button>
+                </a>
+
+            </div>
+            <div class="home-image" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                <img src="images/home-image.png" alt="image1">
+            </div>
+        </section>
+
+<!----------------------About Section----------------------------->
+
+        <section id="about-link" data-index="1" class="about">
+
+            <div class="about-content" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                
+                <div class="about-heading">
+                    <h2>About me</h2>
+                    <h3>Hassan Siddique</h3>
+                    <p>As a Software Engineer, I will play a crucial role in designing, developing, and maintaining high-quality software solutions that meet the needs of our organization and your clients.</p>
+                </div>
+                
+                <div class="skill-sets">
+
+                    <div class="skill-set">
+                        <label for="mobile-app-dev">Mobile App Developement</label>
+                        <input type="range" id="mobile-app-dev" min="0" max="100" value="95">
+                    </div>
+
+                    <div class="skill-set">
+                        <label for="web-app-dev">Web App Developement</label>
+                        <input type="range" id="web-app-dev" min="0" max="100" value="85">
+                    </div>
+                    
+                    <div class="skill-set">
+                        <label for="dev-ops">Dev Ops</label>
+                        <input type="range" id="dev-ops" min="0" max="100" value="90">
+                    </div>
+
+                    <div class="skill-set">
+                        <label for="data-science">Data Science</label>
+                        <input type="range" id="data-science" min="0" max="100" value="95">
+                    </div>
+   
+                </div>
+
+            </div>
+            <div class="about-image" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                <img src="images/about-image.png" alt="hassan saddique">
+            </div>
+        </section>
+
+<!----------------------Services Section----------------------------->
+
+        <section id="services-link" data-index="2" class="services">
+
+            <div class="services-heading" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                <h2>My Services</h2>
+                <h3>The Services I Provide</h3>
+                <p>I have designed and developed platforms for startups and enterprises. Our award-winning work generates in revenue and is trusted by million of users.</p>
+            </div>
+
+            <div class="services-provided">
+
+                <div class="services-container">
+
+                    <div class="item item1" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+
+                        <div class="services-icon">
+                            <img src="images/services-icon.png" alt="">
+                        </div>
+
+                        <span>Web App Developement</span>
+                        <div class="underlines">
+                            <div class="underline1"></div>
+                            <div class="underline2"></div>
+                        </div>
+                        <p>My Web App Development Services offer you the expertise and innovation needed to build dynamic, user-centric, and feature-rich web applications that cater to your unique business needs. , we ensure your app is scalable, secure and good performance</p>
+                    </div>
+
+                    <div class="item item2" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+                        
+                        <div class="services-icon">
+                            <img src="images/services-icon.png" alt="">
+                        </div>
+
+                        <span>Mobile App Developement</span>
+                        <div class="underlines">
+                            <div class="underline1"></div>
+                            <div class="underline2"></div>
+                        </div>
+                        <p>My Web App Development Services offer you the expertise and innovation needed to build dynamic, user-centric, and feature-rich web applications that cater to your unique business needs. , we ensure your app is scalable, secure and good performance</p>
+                    </div>
+
+                    <div class="item item3" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                        
+                        <div class="services-icon">
+                            <img src="images/services-icon.png" alt="">
+                        </div>
+
+                        <span>Dev Ops</span>
+                        <div class="underlines">
+                            <div class="underline1"></div>
+                            <div class="underline2"></div>
+                        </div>
+                        <p>My Web App Development Services offer you the expertise and innovation needed to build dynamic, user-centric, and feature-rich web applications that cater to your unique business needs. , we ensure your app is scalable, secure and good performance</p>
+                    </div>
+
+                    <div class="item item4" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
+                        
+                        <div class="services-icon">
+                            <img src="images/services-icon.png" alt="">
+                        </div>
+
+                        <span>Data Science</span>
+                        <div class="underlines">
+                            <div class="underline1"></div>
+                            <div class="underline2"></div>
+                        </div>
+                        <p>My Web App Development Services offer you the expertise and innovation needed to build dynamic, user-centric, and feature-rich web applications that cater to your unique business needs. , we ensure your app is scalable, secure and good performance</p>
+                    </div>
+
+                    <div class="item item5" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+                        
+                        <div class="services-icon">
+                            <img src="images/services-icon.png" alt="">
+                        </div>
+
+                        <span>Artifical Intelligence</span>
+                        <div class="underlines">
+                            <div class="underline1"></div>
+                            <div class="underline2"></div>
+                        </div>
+                        <p>My Web App Development Services offer you the expertise and innovation needed to build dynamic, user-centric, and feature-rich web applications that cater to your unique business needs. , we ensure your app is scalable, secure and good performance</p>
+                    </div>
+
+                    <div class="item item6" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                        
+                        <div class="services-icon">
+                            <img src="images/services-icon.png" alt="">
+                        </div>
+
+                        <span>Staff Augmentation</span>
+                        <div class="underlines">
+                            <div class="underline1"></div>
+                            <div class="underline2"></div>
+                        </div>
+                        <p>My Web App Development Services offer you the expertise and innovation needed to build dynamic, user-centric, and feature-rich web applications that cater to your unique business needs. , we ensure your app is scalable, secure and good performance</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+<!----------------------Projects Section----------------------------->
+
+        <section id="projects-link" data-index="3" class="projects">
+
+            <div class="projects-heading" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                <h2>Portfolio</h2>
+                <h3>Our Latest Projects</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis nisi ante. Aliquet ornare tellus consectetur lacus te. Aliquet ornare tellus consectetur lacus</p>
+            </div>
+
+            <div class="projects-description">
+
+                <div class="project-grid">
+
+                    <!--Shown projects-->
+
+                    <div class="project-details">
+
+                        <a href="https://theexpertscloud.com/portfolio-2/" target="_blank">
+                            <div class="project-image">
+                                <img src="images/project1.png" alt="Laundry Care Dashboard">
+                            </div>
+                            <div class="project-title">
+                                <h4>Web App Developement</h4>
+                                <h3>Laundry Care Dashboard</h3>
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                    <div class="project-details">
+
+                        <a href="https://theexpertscloud.com/portfolio-2/" target="_blank">
+                            <div class="project-image">
+                                <img src="images/project2.png" alt="Laundry Care Dashboard">
+                            </div>
+                            <div class="project-title">
+                                <h4>Web App Developement</h4>
+                                <h3>Social Market Analytics</h3>
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                    <div class="project-details">
+                        <a href="https://theexpertscloud.com/portfolio-2/" target="_blank">
+                            <div class="project-image">
+                                <img src="images/project3.png" alt="Laundry Care Dashboard">
+                            </div>
+                            <div class="project-title">
+                                <h4>Web App Developement</h4>
+                                <h3>GoNitely Renting Out</h3>
+                            </div>
+                        </a>
+                    </div>
+
+
+                        <!--Hidden projects-->
+                
+                    <div class="project-details porject-hidden project-toggle">
+
+                        <a href="https://theexpertscloud.com/portfolio-2/" target="_blank">
+                            <div class="project-image">
+                                <img src="images/project1.png" alt="Laundry Care Dashboard">
+                            </div>
+                            <div class="project-title">
+                                <h4>Web App Developement</h4>
+                                <h3>Social Market Analytics</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-details porject-hidden project-toggle">
+
+                        <a href="https://theexpertscloud.com/portfolio-2/" target="_blank">
+                            <div class="project-image">
+                                <img src="images/project2.png" alt="Laundry Care Dashboard">
+                            </div>
+                            <div class="project-title">
+                                <h4>Web App Developement</h4>
+                                <h3>Laundry Care Dashboard</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-details porject-hidden project-toggle">
+
+                        <a href="https://theexpertscloud.com/portfolio-2/" target="_blank">
+                            <div class="project-image">
+                                <img src="images/project3.png" alt="Laundry Care Dashboard">
+                            </div>
+                            <div class="project-title">
+                                <h4>Web App Developement</h4>
+                                <h3>GoNitely Renting Out</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                  
+                <div class="project-button">
+                  <button class="show-more__projects">See All Projects</button>
+                </div>
+            </div>
+        </section>
+
+<!----------------------Work History Section----------------------------->
+
+        <section class="work-history">
+            <div class="work-history__heading" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                <h2>Experience</h2>
+                <h3>Work History</h3>
+            </div>
+
+            <div class="work-history__container">
+
+                <div class="vertical-line"></div>
+
+                <div class="work-history__body">
+                    
+                    <div class="work-history__content">
+
+                        <div class="work-bubble"></div>
+
+                        <div class="work-history__description" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                            <h3><span>CTO</span> in ExpertsCloud Pvt. Limited</h3>
+                            <h4>2018 to Present</h4>
+                            <p>ExpertsCloud is a software house that provides custom software development services to businesses of all sizes. We have a team of experienced developers who are experts in a variety of programming languages and technologies. We can help you with everything from website development to mobile app development to enterprise software development. We understand that every business is different, so we take the time to understand your specific needs before we start any project. We work with you to develop a custom solution that meets your requirements and budget. We are committed to providing our clients with the highest quality
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="work-history__content">
+
+                        <div class="work-bubble"></div>
+
+                        <div class="work-history__description" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                            <h3><span>Senior Full Stack Developer</span> in AugmentCare Software House</h3>
+                            <h4>2014 - 2018</h4>
+                            <p>AugmentCare is an integrated health care portal which connects patients, doctors, and care facilities to provide the most comprehensive solution set for preventative, diagnostic and care facilitation in Pakistan and the developing world. We focus on the patient journey across the continuum of care and address challenges faced by all of the key stakeholders (patients, providers, caregivers & payers). AugmentCare is an integrated health care portal which connects patients, doctors, and care facilities to provide the most comprehensive solution set for preventative, diagnostic and care facilitation in Pakistan and the developing world.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-history__content">
+
+                        <div class="work-bubble"></div>
+
+                        <div class="work-history__description" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                            <h3><span>Software Engineer In</span> PureLogics Software House</h3>
+                            <h4>2009 - 2011</h4>
+                            <p>PureLogics is a full service technology company. With over 16 years of experience, Fortune 1000 customers and over 800+ successful projects, PureLogics develops world-class web and mobile applications for customers across the globe. Our Global Delivery Network allows us to deliver reliable technology and outsourcing services. We pride ourselves in the diversity of the expertise that we offer and our impeccable record with satisfied clients so far. Much of this success is owed to some of the most rigorous and effective methodology that we at PureLogics employ in our engineering process to ensure the best of results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!----------------------Testimonials Section----------------------------->
+
+        <section id="testimonials-link" data-index="4" class="testimonials">
+            <div class="testimo-heading" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <h2>Testimonials</h2>
+                <h3>People Talk About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis nisi ante. Aliquet ornare tellus consectetur lacus te. Aliquet ornare tellus consectetur lacus</p>
+            </div>
+
+            <div class="gallery js-flickity" 
+            
+            data-flickity-options='{ 
+                "wrapAround": true, 
+                "prevNextButtons": false, 
+                "setGallerySize": false, 
+                "autoPlay": 1500, 
+                "initialIndex": 1, 
+                "selectedAttraction": 0.01, 
+                "friction": 0.15
+            }'>
+            
+
+                <div class="gallery-cell">
+                    <div class="gallery-images">
+
+                        <div class="gallery-img">
+                            <img src="images/testimo1.png" alt="">
+                        </div>
+                        
+                        <i class="fa-solid fa-quote-left fa-flip-horizontal"></i>
+        
+                    </div>
+
+                    <div class="gallery-content">
+                        <h3>Usman Aftab</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem cupiditate eligendi, reiciendis cum dignissimos vitae modi sequi eveniet omnis, perferendis hic fugit doloribus porro! Commodi minima obcaecati voluptatibus tenetur!</p>
+                    </div>
+                </div>
+
+
+                <div class="gallery-cell">
+                    <div class="gallery-images">
+
+                        <div class="gallery-img">
+                            <img src="images/testimo2.png" alt="">
+                        </div>
+                        
+                        <i class="fa-solid fa-quote-left fa-flip-horizontal"></i>
+        
+                    </div>
+
+                    <div class="gallery-content">
+                        <h3>Sayed Arif Qadir</h3>
+                        <p>I have worked with hassan for more than a year, over that period I found him to be an excellent resource. He learned from his seniors and worked well with colleagues. He was critical part of our Java unit and a good person to be around at the office.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-cell">
+                    <div class="gallery-images">
+
+                        <div class="gallery-img">
+                            <img src="images/testimo3.png" alt="">
+                        </div>
+                        
+                        <i class="fa-solid fa-quote-left fa-flip-horizontal"></i>
+        
+                    </div>
+
+                    <div class="gallery-content">
+                        <h3>Ahmed Ali</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem cupiditate eligendi, reiciendis cum dignissimos vitae modi sequi eveniet omnis, perferendis hic fugit doloribus porro! Commodi minima obcaecati voluptatibus tenetur!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!----------------------Contact Section----------------------------->
+
+        <section id="contact-link" data-index="5" class="contact">
+            <div class="contact-heading" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                <h3>Lets Developement Together</h3>
+                <p>Ready to elevate your brand with captivating design? Let's collaborate and create something extraordinary together.</p>
+            </div>
+
+            <div class="form-group" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <button type="submit" onclick="sendMail()">Contact me</button>
+                
+                <div id="custom-alert" class="custom-alert__show">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Success</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div id="logo">
+            <h2><div>Has</div>san Siddique</h2>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a data-page="home" href="#home-link">Home</a></li>
+                <li><a data-page="about" href="#about-link">About</a></li>
+                <li><a data-page="services" href="#services-link">Services</a></li>
+                <li><a data-page="projects" href="#projects-link">Projects</a></li>
+                <li><a data-page="testimonials" href="#testimonials-link">Testimonials</a></li>
+                <li><a href="#contact-link">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="social-icons">
+
+            <a href="https://www.facebook.com/imhassan66" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/imhassan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+
+        <div class="footer-border">
+            <p>&copy 2023 <span>Hassan Siddique </span><span class="footer-text__hidden">All rights reserved, Inc.</span></p>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/d10602c728.js" crossorigin="anonymous"></script>
+</body>
+</html>
