@@ -1035,7 +1035,7 @@ footer .footer-border span:nth-child(1){
         flex-direction: column;
         align-items: center;
         padding: 30px 10px;
-        height: 400px;
+        height: 300px;
         position: absolute;
         right: 0;
         top: 12vh;
@@ -1199,7 +1199,7 @@ footer .footer-border span:nth-child(1){
            flex-direction: column;
            align-items: center;
            padding: 30px 10px;
-           height: 400px;
+           height: 300px;
            position: absolute;
            right: 0;
            top: 12vh;
